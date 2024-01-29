@@ -4,4 +4,8 @@
     ./options.nix
     ./plugins/lualine.nix
   ];
+
+  colorschemes.rose-pine = {
+    enable = true;
+  };
 }
