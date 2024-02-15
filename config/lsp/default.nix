@@ -4,7 +4,16 @@
       enable = true;
       servers = {
         nil_ls.enable = true;
-        gopls.enable = true;
+        gopls = {
+				  enable = true;
+					extraOptions = {
+					  settings = {
+						  gopls = {
+							  completeUnimported = true;
+							};
+						};
+					};
+				};
         bashls.enable = true;
         cssls.enable = true;
         eslint.enable = true;
