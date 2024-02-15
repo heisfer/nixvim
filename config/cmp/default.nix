@@ -1,6 +1,7 @@
 {
   plugins = {
     lspkind.enable = true;
+		luasnip.enable = true;
     nvim-cmp = {
       enable = true;
       mapping = {
@@ -18,6 +19,7 @@
         };
         "<CR>" = "cmp.mapping.confirm({ select = true })";
       };
+			snippet.expand = "luasnip";
 			sources = [
         {
           name = "path";
