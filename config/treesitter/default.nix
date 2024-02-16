@@ -14,5 +14,12 @@
 		treesitter-refactor = {
 		  enable = true;
 		};
+
+		treesitter-textobjects = {
+		  enable = true;
+		};
+		ts-autotag = {
+		  enable = true;
+		};
 	};
 }

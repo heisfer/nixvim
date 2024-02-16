@@ -1,19 +1,22 @@
 {
   plugins = {
+    fidget.enable = true;
+		emmet.enable = true;
     lsp = {
       enable = true;
       servers = {
         nil_ls.enable = true;
         gopls = {
-				  enable = true;
-					extraOptions = {
-					  settings = {
-						  gopls = {
-							  completeUnimported = true;
-							};
-						};
-					};
-				};
+          enable = true;
+          extraOptions = {
+            settings = {
+              gopls = {
+                completeUnimported = true;
+              };
+            };
+          };
+        };
+				emmet_ls.enable = true;
         bashls.enable = true;
         cssls.enable = true;
         eslint.enable = true;
