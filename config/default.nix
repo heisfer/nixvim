@@ -1,12 +1,11 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./alpha
+    ./ui
     ./misc
     ./cmp
     ./git
     ./lsp
-    ./visual
     ./treesitter
     ./options.nix
     ./globals.nix
