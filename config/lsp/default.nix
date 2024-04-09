@@ -1,7 +1,11 @@
 {
+  imports = [
+	  ./none-ls.nix
+	];
   plugins = {
     fidget.enable = true;
-		emmet.enable = true;
+    emmet.enable = true;
+    lsp-format.enable = true;
     lsp = {
       enable = true;
       servers = {
@@ -16,7 +20,7 @@
             };
           };
         };
-				emmet_ls.enable = true;
+        emmet_ls.enable = true;
         bashls.enable = true;
         cssls.enable = true;
         eslint.enable = true;

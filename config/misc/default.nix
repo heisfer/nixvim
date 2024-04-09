@@ -1,11 +1,12 @@
 {
   imports = [
-	  ./extra.nix
-	];
+    ./extra.nix
+    ./which-key.nix
+  ];
   plugins = {
-	  nvim-autopairs = {
+    nvim-autopairs = {
       enable = true;
-		};
-		surround.enable = true;
+    };
+    surround.enable = true;
   };
 }

@@ -5,11 +5,20 @@
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     nixvim.url = "github:nix-community/nixvim";
     flake-parts.url = "github:hercules-ci/flake-parts";
+    nixneovimplugins = {
+      url = "github:NixNeovim/NixNeovimPlugins";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    plugin-neotab = {
+      url = "github:kawre/neotab.nvim";
+      flake = false;
+    };
   };
 
   outputs = {
     nixvim,
     flake-parts,
+    nixneovimplugins,
     ...
   } @ inputs: let
     config = import ./config; # import the module directly
