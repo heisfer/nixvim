@@ -23,6 +23,7 @@
         emmet_ls.enable = true;
         bashls.enable = true;
         cssls.enable = true;
+        pyright.enable = true;
         eslint.enable = true;
         graphql.enable = true;
         html.enable = true;
