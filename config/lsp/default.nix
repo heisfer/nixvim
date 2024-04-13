@@ -1,7 +1,7 @@
-{
+{pkgs, ...}: {
   imports = [
-	  ./none-ls.nix
-	];
+    ./none-ls.nix
+  ];
   plugins = {
     fidget.enable = true;
     emmet.enable = true;
@@ -27,7 +27,12 @@
         graphql.enable = true;
         html.enable = true;
         htmx.enable = true;
-        phpactor.enable = true;
+    #    phpactor = {
+    #      enable = true;
+    #      cmd = ["${pkgs.phpactor}" "language-server"];
+    #    };
+        intelephense.enable = true;
+
         jsonls.enable = true;
         lemminx.enable = true;
         lua-ls.enable = true;
