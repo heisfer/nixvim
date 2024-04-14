@@ -28,16 +28,11 @@
         graphql.enable = true;
         html.enable = true;
         htmx.enable = true;
-    #    phpactor = {
-    #      enable = true;
-    #      cmd = ["${pkgs.phpactor}" "language-server"];
-    #    };
-        intelephense.enable = true;
+        phpactor.enable = true;
 
         jsonls.enable = true;
         lemminx.enable = true;
         lua-ls.enable = true;
-        tailwindcss.enable = true;
         taplo.enable = true;
         templ.enable = true;
         yamlls.enable = true;
