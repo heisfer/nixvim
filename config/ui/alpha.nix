@@ -53,8 +53,15 @@
           (
             mkButton
             "f"
-            "<CMD>lua require('telescope.builtin').find_files({hidden = true})<CR>"
+            "<CMD>Telescope find_files<CR>"
             "🔍 Find File"
+            "Operator"
+          )
+          (
+            mkButton
+            "e"
+            "<CMD>Telescope file_browser<CR>"
+            "📁 Explore"
             "Operator"
           )
           (
