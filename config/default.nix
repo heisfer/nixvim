@@ -5,6 +5,7 @@
     ./core/telescope
     ./core/ui
     ./core/git
+    ./languages/nix.nix
     ./misc
     ./cmp
     ./lsp
