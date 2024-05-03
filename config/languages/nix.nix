@@ -3,7 +3,7 @@
     nix.enable = true;
 
     treesitter = {
-      nixGrammers = true;
+      nixGrammars = true;
       nixvimInjections = true;
     };
 
