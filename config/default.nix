@@ -1,15 +1,15 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./ui
+    ./core/treesitter
+    ./core/telescope
+    ./core/ui
+    ./core/git
     ./misc
     ./cmp
-    ./git
     ./lsp
-    ./treesitter
     ./options.nix
     ./globals.nix
-    ./plugins/telescope.nix
   ];
 
   colorschemes.rose-pine = {
