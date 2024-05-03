@@ -6,6 +6,7 @@
     ./core/ui
     ./core/git
     ./languages/nix.nix
+    ./languages/php.nix
     ./misc
     ./cmp
     ./lsp

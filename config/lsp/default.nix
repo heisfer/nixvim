@@ -27,8 +27,6 @@
         graphql.enable = true;
         html.enable = true;
         htmx.enable = true;
-        phpactor.enable = true;
-
         jsonls.enable = true;
         lemminx.enable = true;
         lua-ls.enable = true;
