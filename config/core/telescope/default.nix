@@ -2,6 +2,9 @@
   extraPackages = [
     pkgs.ripgrep
   ];
+  imports = [
+    ./telescope-ui.nix
+  ];
   plugins.telescope = {
     enable = true;
     extensions = {
@@ -15,15 +18,23 @@
 
     settings = {
       defaults = {
-        layout_startegy = "dropdown";
+        layout_strategy = "vertical";
         layout_config = {
-          prompt_position = "top";
-          preview_cutoff = 50;
+          vertical = {
+            preview_height = 15;
+            preview_cutoff = 0;
+          };
+        };
+        picker = {
+          find_files = {
+            hidden = true;
+          };
         };
         file_ignore_patterns = [
           "^.git/"
           "^.mypy_cache/"
           "^__pycache__/"
+          "flake.lock"
           "^output/"
           "^data/"
           "%.ipynb"

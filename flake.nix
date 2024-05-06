@@ -13,6 +13,10 @@
       url = "github:kawre/neotab.nvim";
       flake = false;
     };
+    blade-treesitter = {
+      url = "github:EmranMR/tree-sitter-blade";
+      flake = false;
+    };
   };
 
   outputs = {
@@ -49,6 +53,9 @@
       in {
         _module.args.pkgs = import inputs.nixpkgs {
           inherit system;
+          overlays = builtins.attrValues {
+            default = import ./overlay {inherit inputs;};
+          };
           config.allowUnfree = true;
         };
         checks = {
