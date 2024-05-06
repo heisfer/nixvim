@@ -1,17 +1,27 @@
 {
   # Import all your configuration modules here
   imports = [
-    ./core/treesitter
-    ./core/telescope
-    ./core/ui
-    ./core/git
-    ./languages/nix.nix
-    ./languages/php.nix
-    ./misc
     ./core/cmp
-    ./lsp
-    ./options.nix
+    ./core/git
+    ./core/snippets
+    ./core/telescope
+    ./core/treesitter
+    ./core/ui
     ./globals.nix
+
+    ./languages/nix
+    ./languages/go
+    ./languages/css
+    ./languages/nix
+    ./languages/php
+    ./languages/bash
+    ./languages/go
+    ./languages/json
+    ./languages/yaml
+
+    ./lsp
+    ./misc
+    ./options.nix
   ];
 
   colorschemes.rose-pine = {
