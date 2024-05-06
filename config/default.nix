@@ -8,7 +8,7 @@
     ./languages/nix.nix
     ./languages/php.nix
     ./misc
-    ./cmp
+    ./core/cmp
     ./lsp
     ./options.nix
     ./globals.nix

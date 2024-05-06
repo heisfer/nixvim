@@ -1,7 +1,7 @@
 {
   plugins = {
     lsp.servers = {
-      phpactor.enable = true;
+      intelephense.enable = true;
     };
 
     none-ls = {
